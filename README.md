@@ -16,8 +16,8 @@
 |就寝時刻|20:00~24:00|
 |朝の体温|36'0~37'0|
 ## requirements
-python===3.8  
-pandas===1.03
+python==3.8  
+pandas==1.03
 
 ## usage
 `main.py`を実行
