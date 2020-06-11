@@ -32,7 +32,7 @@ body_temperature = {
 ```
 #### 日付
 `main.py`の`date`を`'YYYY-mm-dd'`形式で変更
-```python
+```
 date = {
     "start": '2020-06-11',#format: 'YYYY-mm-dd'
     "end": '2020-06-24', #format: 'YYYY-mm-dd'
