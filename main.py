@@ -12,8 +12,8 @@ def main(temp, dates):
     body_temp = BodyTemp(temp['min'], temp['max'])
 
     df_temp = pd.DataFrame({'朝の体温(℃)': body_temp.get_random_body_temp(len(dates))}, columns=['朝の体温(℃)', ], index=dates)
-    df_time = pd.DataFrame({'起床時刻': random_time.get_time(morning=True),
-                            '就寝時刻': random_time.get_time(night=True)}, columns=['起床時刻', '就寝時刻'], index=dates)
+    df_time = pd.DataFrame({'起床時刻': random_time.get_random_time(morning=True),
+                            '就寝時刻': random_time.get_random_time(night=True)}, columns=['起床時刻', '就寝時刻'], index=dates)
 
     print(output:=pd.DataFrame.join(df_temp, df_time,))
 
